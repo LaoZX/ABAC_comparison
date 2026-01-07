@@ -1,0 +1,18 @@
+services:
+  abac-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: abac-foundry
+    volumes:
+      # Mount the project directory so changes are reflected
+      - .:/app
+      # Persist Foundry cache
+      - foundry-cache:/root/.foundry
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+volumes:
+  foundry-cache:
