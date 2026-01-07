@@ -1,4 +1,4 @@
-# ABAC Smart Contract System
+# ABAC only based on Smart Contract System
 
 A production-quality Attribute-Based Access Control (ABAC) system implemented as Ethereum smart contracts. This system enables fine-grained access control for IoT resources based on subject attributes, object attributes, and environment conditions.
 
